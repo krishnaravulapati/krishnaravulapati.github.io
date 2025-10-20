@@ -3,43 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - My Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="Projects by Krishna Ravulapati, showcasing cloud automation, MLOps, and big data solutions.">
+    <title>Projects - Krishna Ravulapati's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="index.html">Krishna Ravulapati</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Main Content -->
+    <!-- Projects Section -->
     <div class="container mt-5">
-        
-    <h1>Projects</h1>
-    <ul class="list-group">
-        <li class="list-group-item"><a href="https://github.com/krishnaravulapati/optimized_data_pipeline">Optimized Data Pipelines</a></li>
-        <li class="list-group-item"><a href="https://github.com/krishnaravulapati/real_time_analytics">Real-Time Analytics</a></li>
-        <li class="list-group-item"><a href="https://github.com/krishnaravulapati/machine_learning_pipelines">Machine Learning Pipelines</a></li>
-    </ul>
-
+        <h1 class="text-center mb-4">My Projects</h1>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" id="cloud-automation">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Cloud Infrastructure Automation</h5>
+                        <p class="card-text flex-grow-1">Developed a Terraform-based automation pipeline for provisioning scalable AWS infrastructure, reducing deployment time by 40%. Integrated CI/CD with Jenkins for continuous updates and monitoring.</p>
+                        <p class="text-muted small"><strong>Tools:</strong> Terraform, AWS, Docker, Jenkins</p>
+                        <a href="https://github.com/krishnaravulapati/cloud-automation" class="btn btn-primary mt-auto">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" id="mlops-pipeline">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">MLOps Pipeline</h5>
+                        <p class="card-text flex-grow-1">Built an end-to-end MLOps pipeline using Kubeflow and Airflow to deploy machine learning models for real-time predictive analytics in a Kubernetes cluster.</p>
+                        <p class="text-muted small"><strong>Tools:</strong> Kubeflow, Airflow, Kubernetes, Python</p>
+                        <a href="https://github.com/krishnaravulapati/mlops-pipeline" class="btn btn-primary mt-auto">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" id="big-data-system">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Big Data Processing System</h5>
+                        <p class="card-text flex-grow-1">Designed a Spark-based data processing system to handle petabyte-scale datasets, improving query performance by 30% using optimized Hadoop and Scala integrations.</p>
+                        <p class="text-muted small"><strong>Tools:</strong> Apache Spark, Hadoop, Scala, AWS S3</p>
+                        <a href="https://github.com/krishnaravulapati/big-data-system" class="btn btn-primary mt-auto">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3 mt-5">
-        &copy; 2025 Krishna Ravulapati. All rights reserved.
+        &copy; 2024 Krishna Ravulapati. All rights reserved.
     </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
