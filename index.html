@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of Krishna Ravulapati, Staff Site Reliability Engineer specializing in scalable cloud systems, data engineering, and MLOps.">
     <title>Home - Krishna Ravulapati's Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
@@ -13,12 +14,12 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Krishna Ravulapati</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -49,7 +50,10 @@
                         <h5 class="card-title">Cloud Infrastructure Automation</h5>
                         <p class="card-text flex-grow-1">Terraform-based pipeline for AWS provisioning, reducing deployment time by 40%.</p>
                         <p class="text-muted small"><strong>Tools:</strong> Terraform, AWS, Docker</p>
-                        <a href="projects.html" class="btn btn-outline-primary mt-auto">View Details</a>
+                        <div class="mt-auto">
+                            <a href="https://github.com/krishnaravulapati/cloud-automation" class="btn btn-outline-primary me-2">GitHub</a>
+                            <a href="projects.html#cloud-automation" class="btn btn-outline-secondary">View Details</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -59,7 +63,10 @@
                         <h5 class="card-title">MLOps Pipeline</h5>
                         <p class="card-text flex-grow-1">End-to-end Kubeflow and Airflow setup for real-time ML model deployment.</p>
                         <p class="text-muted small"><strong>Tools:</strong> Kubeflow, Airflow, Kubernetes</p>
-                        <a href="projects.html" class="btn btn-outline-primary mt-auto">View Details</a>
+                        <div class="mt-auto">
+                            <a href="https://github.com/krishnaravulapati/mlops-pipeline" class="btn btn-outline-primary me-2">GitHub</a>
+                            <a href="projects.html#mlops-pipeline" class="btn btn-outline-secondary">View Details</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,7 +76,10 @@
                         <h5 class="card-title">Big Data Processing System</h5>
                         <p class="card-text flex-grow-1">Spark-optimized system for petabyte-scale data, boosting query performance by 30%.</p>
                         <p class="text-muted small"><strong>Tools:</strong> Apache Spark, Hadoop, Scala</p>
-                        <a href="projects.html" class="btn btn-outline-primary mt-auto">View Details</a>
+                        <div class="mt-auto">
+                            <a href="https://github.com/krishnaravulapati/big-data-system" class="btn btn-outline-primary me-2">GitHub</a>
+                            <a href="projects.html#big-data-system" class="btn btn-outline-secondary">View Details</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -82,7 +92,7 @@
     </footer>
 
     <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
