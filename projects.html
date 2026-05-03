@@ -3,74 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projects by Krishna Ravulapati, showcasing cloud automation, MLOps, and big data solutions.">
-    <title>Projects - Krishna Ravulapati's Portfolio</title>
+    <meta name="description" content="Projects by Krishna Ravulapati covering cloud automation, MLOps, data pipelines, and real-time analytics.">
+    <title>Projects | Krishna Ravulapati</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Krishna Ravulapati</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
+    <div class="site-shell">
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Krishna Ravulapati</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Projects Section -->
-    <div class="container mt-5">
-        <h1 class="text-center mb-4">My Projects</h1>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm" id="cloud-automation">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Cloud Infrastructure Automation</h5>
-                        <p class="card-text flex-grow-1">Developed a Terraform-based automation pipeline for provisioning scalable AWS infrastructure, reducing deployment time by 40%. Integrated CI/CD with Jenkins for continuous updates and monitoring.</p>
-                        <p class="text-muted small"><strong>Tools:</strong> Terraform, AWS, Docker, Jenkins</p>
-                        <a href="https://github.com/krishnaravulapati/cloud-automation" class="btn btn-primary mt-auto">View on GitHub</a>
+        <main class="section">
+            <div class="container">
+                <p class="eyebrow">Selected Projects</p>
+                <h1 class="page-title mb-3">Infrastructure, data, and ML systems work.</h1>
+                <p class="section-copy mb-5">These projects show the operating themes I care about: repeatable provisioning, observable pipelines, and automation that makes systems easier to run.</p>
+
+                <div class="row g-4">
+                    <div class="col-lg-4" id="optimized-data-pipeline">
+                        <article class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h2 class="card-title h4">Optimized Data Pipeline</h2>
+                                <p class="card-text flex-grow-1">Apache Spark pipeline on Amazon EMR Serverless for e-commerce sales processing, with infrastructure expressed through Terraform and packaged with Docker.</p>
+                                <div class="tag-list">
+                                    <span class="tag">Terraform</span>
+                                    <span class="tag">AWS</span>
+                                    <span class="tag">Docker</span>
+                                    <span class="tag">Spark</span>
+                                    <span class="tag">EMR Serverless</span>
+                                </div>
+                                <a href="https://github.com/krishnaravulapati/optimized_data_pipeline" class="btn btn-primary mt-auto"><i class="bi bi-github me-2"></i>View on GitHub</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-4" id="mlops-pipeline">
+                        <article class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h2 class="card-title h4">MLOps Pipeline</h2>
+                                <p class="card-text flex-grow-1">A repeatable ML workflow using preprocessing, training, and deployment scripts as a foundation for model lifecycle automation.</p>
+                                <div class="tag-list">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Kubeflow</span>
+                                    <span class="tag">Airflow</span>
+                                    <span class="tag">Kubernetes</span>
+                                </div>
+                                <a href="https://github.com/krishnaravulapati/machine_learning_pipelines" class="btn btn-primary mt-auto"><i class="bi bi-github me-2"></i>View on GitHub</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-4" id="real-time-analytics">
+                        <article class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h2 class="card-title h4">Real-Time Analytics</h2>
+                                <p class="card-text flex-grow-1">Streaming analytics patterns for processing operational data and producing timely insights with Spark-oriented workflows.</p>
+                                <div class="tag-list">
+                                    <span class="tag">Spark</span>
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Analytics</span>
+                                    <span class="tag">Data Processing</span>
+                                </div>
+                                <a href="https://github.com/krishnaravulapati/real_time_analytics" class="btn btn-primary mt-auto"><i class="bi bi-github me-2"></i>View on GitHub</a>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm" id="mlops-pipeline">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">MLOps Pipeline</h5>
-                        <p class="card-text flex-grow-1">Built an end-to-end MLOps pipeline using Kubeflow and Airflow to deploy machine learning models for real-time predictive analytics in a Kubernetes cluster.</p>
-                        <p class="text-muted small"><strong>Tools:</strong> Kubeflow, Airflow, Kubernetes, Python</p>
-                        <a href="https://github.com/krishnaravulapati/machine_learning_pipelines" class="btn btn-primary mt-auto">View on GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm" id="big-data-system">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Big Data Processing System</h5>
-                        <p class="card-text flex-grow-1">Designed a Spark-based data processing system to handle petabyte-scale datasets, improving query performance by 30% using optimized Hadoop and Scala integrations.</p>
-                        <p class="text-muted small"><strong>Tools:</strong> Apache Spark, Hadoop, Scala, AWS S3</p>
-                        <a href="https://github.com/krishnaravulapati/real_time_analytics" class="btn btn-primary mt-auto">View on GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </main>
+
+        <footer class="text-center py-4">
+            &copy; 2026 Krishna Ravulapati. All rights reserved.
+        </footer>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3 mt-5">
-        &copy; 2024 Krishna Ravulapati. All rights reserved.
-    </footer>
-
-    <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </body>

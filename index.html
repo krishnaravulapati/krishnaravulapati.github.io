@@ -1,124 +1,144 @@
-<!-- Paste your index.html here and I'll update the colors and highlights. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Krishna Ravulapati, Staff Site Reliability Engineer specializing in scalable cloud systems, data engineering, and MLOps.">
-    <title>Home - Krishna Ravulapati's Portfolio</title>
+    <meta name="description" content="Portfolio of Krishna Ravulapati, Staff Site Reliability Engineer focused on reliable cloud platforms, data engineering, MLOps, and automation.">
+    <title>Krishna Ravulapati | Staff SRE</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <style>
-        :root {
-            --elm: #33697b;
-            --elm-light: #3f7f94;
-        }
-        .navbar-dark.bg-dark {
-            background-color: var(--elm) !important;
-        }
-        .btn-primary,
-        .btn-outline-primary:hover {
-            background-color: var(--elm) !important;
-            border-color: var(--elm) !important;
-        }
-        .btn-outline-primary {
-            color: var(--elm) !important;
-            border-color: var(--elm) !important;
-        }
-        .card {
-            border-radius: 16px;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-        }
-    </style>
+    <link href="styles.css" rel="stylesheet">
 </head>
-<body style="background-color: #eef3f5;">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Krishna Ravulapati</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
+<body>
+    <div class="site-shell">
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Krishna Ravulapati</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Main Content -->
-    <div class="container text-center mt-5">
-        <h1 class="mb-4">Welcome to My Portfolio</h1>
-        <p class="lead">
-            I am a <strong>Staff Site Reliability Engineer (SRE)</strong> with a passion for building scalable, secure, and reliable cloud systems. Leveraging my expertise in <strong>data engineering</strong> and <strong>big data technologies</strong>, I design solutions that empower industries to harness the power of data.
-        </p>
-        <p>
-            My work spans <strong>cloud infrastructure optimization</strong>, <strong>distributed systems</strong>, and <strong>automation</strong>, with a focus on emerging technologies like <strong>MLOps</strong> and <strong>serverless architectures</strong>. Join me on a journey through my projects, achievements, and insights.
-        </p>
-        <a href="about.html" class="btn btn-primary btn-lg mt-3">Learn More About Me</a>
+        <header class="hero">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-8">
+                        <p class="eyebrow">Staff Site Reliability Engineer</p>
+                        <h1>Reliable cloud platforms for data-heavy systems.</h1>
+                        <p class="hero-copy mt-4">
+                            I build and improve infrastructure for distributed systems, data pipelines, and ML workflows with a practical focus on uptime, automation, security, and operational clarity.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <a href="projects.html" class="btn btn-primary btn-lg"><i class="bi bi-kanban me-2"></i>View Projects</a>
+                            <a href="contact.html" class="btn btn-outline-secondary btn-lg"><i class="bi bi-send me-2"></i>Contact</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="hero-panel">
+                            <img class="profile-avatar" src="https://avatars.githubusercontent.com/u/45572930?v=4" alt="Krishna Ravulapati GitHub profile photo">
+                            <div class="metric mb-4">
+                                <strong>SRE</strong>
+                                <span>Reliability, automation, observability</span>
+                            </div>
+                            <div class="metric mb-4">
+                                <strong>Data</strong>
+                                <span>Spark, EMR, pipelines, analytics</span>
+                            </div>
+                            <div class="metric">
+                                <strong>MLOps</strong>
+                                <span>Kubernetes, Airflow, Kubeflow workflows</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="section">
+                <div class="container">
+                    <div class="d-flex flex-column flex-md-row justify-content-between gap-3 mb-4">
+                        <div>
+                            <h2 class="section-title">Featured Work</h2>
+                            <p class="section-copy mb-0">Focused examples across cloud automation, data processing, and ML delivery.</p>
+                        </div>
+                        <a href="projects.html" class="btn btn-outline-primary align-self-md-end"><i class="bi bi-arrow-right me-2"></i>All Projects</a>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <article class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title h5">Optimized Data Pipeline</h3>
+                                    <p class="card-text flex-grow-1">Spark and EMR Serverless pipeline for processing e-commerce sales data with infrastructure managed through Terraform.</p>
+                                    <div class="tag-list">
+                                        <span class="tag">Terraform</span>
+                                        <span class="tag">AWS</span>
+                                        <span class="tag">Spark</span>
+                                    </div>
+                                    <div class="d-flex flex-wrap gap-2 mt-auto">
+                                        <a href="https://github.com/krishnaravulapati/optimized_data_pipeline" class="btn btn-outline-primary"><i class="bi bi-github me-2"></i>GitHub</a>
+                                        <a href="projects.html#optimized-data-pipeline" class="btn btn-outline-secondary">Details</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title h5">MLOps Pipeline</h3>
+                                    <p class="card-text flex-grow-1">Kubeflow and Airflow workflow for training, deployment, and repeatable ML operations on Kubernetes.</p>
+                                    <div class="tag-list">
+                                        <span class="tag">Kubeflow</span>
+                                        <span class="tag">Airflow</span>
+                                        <span class="tag">Kubernetes</span>
+                                    </div>
+                                    <div class="d-flex flex-wrap gap-2 mt-auto">
+                                        <a href="https://github.com/krishnaravulapati/machine_learning_pipelines" class="btn btn-outline-primary"><i class="bi bi-github me-2"></i>GitHub</a>
+                                        <a href="projects.html#mlops-pipeline" class="btn btn-outline-secondary">Details</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="card h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title h5">Real-Time Analytics</h3>
+                                    <p class="card-text flex-grow-1">Streaming-oriented analytics work using Spark patterns for processing and analyzing operational data.</p>
+                                    <div class="tag-list">
+                                        <span class="tag">Spark</span>
+                                        <span class="tag">Python</span>
+                                        <span class="tag">Analytics</span>
+                                    </div>
+                                    <div class="d-flex flex-wrap gap-2 mt-auto">
+                                        <a href="https://github.com/krishnaravulapati/real_time_analytics" class="btn btn-outline-primary"><i class="bi bi-github me-2"></i>GitHub</a>
+                                        <a href="projects.html#real-time-analytics" class="btn btn-outline-secondary">Details</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center py-4">
+            &copy; 2026 Krishna Ravulapati. All rights reserved.
+        </footer>
     </div>
 
-    <!-- Featured Projects Preview -->
-    <div class="container mt-5">
-        <h2 class="text-center mb-4">Featured Projects</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Optimized Data Pipeline</h5>
-                        <p class="card-text flex-grow-1">optimized data pipeline to process e-commerce sales data using Apache Spark on Amazon EMR Serverless.</p>
-                        <p class="text-muted small"><strong>Tools:</strong> Terraform, AWS, Docker,Spark, EMR Serverless</p>
-                        <div class="mt-auto">
-                            <a href="https://github.com/krishnaravulapati/optimized_data_pipeline" class="btn btn-outline-primary me-2">GitHub</a>
-                            <a href="projects.html#optimized-data-pipeline" class="btn btn-outline-secondary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">MLOps Pipeline</h5>
-                        <p class="card-text flex-grow-1">End-to-end Kubeflow and Airflow setup for real-time ML model deployment.</p>
-                        <p class="text-muted small"><strong>Tools:</strong> Kubeflow, Airflow, Kubernetes</p>
-                        <div class="mt-auto">
-                            <a href="https://github.com/krishnaravulapati/machine_learning_pipelines" class="btn btn-outline-primary me-2">GitHub</a>
-                            <a href="projects.html#mlops-pipeline" class="btn btn-outline-secondary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Big Data Processing System</h5>
-                        <p class="card-text flex-grow-1">Spark-optimized system for petabyte-scale data, boosting query performance by 30%.</p>
-                        <p class="text-muted small"><strong>Tools:</strong> Apache Spark, Hadoop, Scala</p>
-                        <div class="mt-auto">
-                            <a href="https://github.com/krishnaravulapati/real_time_analytics" class="btn btn-outline-primary me-2">GitHub</a>
-                            <a href="projects.html#big-data-system" class="btn btn-outline-secondary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3 mt-5">
-        &copy; 2024 Krishna Ravulapati. All rights reserved.
-    </footer>
-
-    <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </body>
