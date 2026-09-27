@@ -113,12 +113,17 @@ a {
 }
 
 .eyebrow {
-    color: var(--accent);
+    color: var(--accent-strong);
     font-size: 0.78rem;
     font-weight: 800;
     letter-spacing: 0.08em;
     margin-bottom: 14px;
     text-transform: uppercase;
+}
+
+/* Keep the lighter teal on dark backgrounds where contrast passes */
+.hero .eyebrow {
+    color: var(--accent);
 }
 
 .hero h1,
@@ -382,6 +387,37 @@ footer {
     background: var(--ink);
     color: rgba(255, 255, 255, 0.8);
     margin-top: auto;
+}
+
+.footer-social {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.25rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-social:hover {
+    color: var(--signal);
+}
+
+/* Keyboard users: skip straight to the main content */
+.skip-link {
+    position: absolute;
+    left: 12px;
+    top: -70px;
+    background: var(--ink);
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 16px;
+    transition: top 0.2s ease;
+    z-index: 2000;
+}
+
+.skip-link:focus {
+    color: #fff;
+    top: 12px;
 }
 
 @media (max-width: 767px) {
