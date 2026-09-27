@@ -420,6 +420,30 @@ footer {
     top: 12px;
 }
 
+/* Contact form */
+.contact-form-wrap {
+    background: rgba(255, 255, 255, 0.62);
+    border: 1px solid rgba(219, 228, 239, 0.8);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 28px;
+}
+
+.contact-form .form-control {
+    border-color: var(--line);
+    border-radius: 8px;
+    padding: 12px 14px;
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--accent-strong);
+    box-shadow: 0 0 0 0.2rem rgba(0, 166, 166, 0.15);
+}
+
+.contact-form .form-label {
+    font-weight: 700;
+}
+
 @media (max-width: 767px) {
     .hero {
         padding: 64px 0 36px;
