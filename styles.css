@@ -93,7 +93,7 @@ a {
 .hero {
     position: relative;
     overflow: hidden;
-    padding: 96px 0 68px;
+    padding: 64px 0 48px;
     background:
         linear-gradient(120deg, rgba(11, 18, 32, 0.96), rgba(17, 24, 39, 0.9)),
         linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
@@ -137,7 +137,7 @@ a {
 .hero h1 {
     color: #fff;
     max-width: 780px;
-    font-size: clamp(2.4rem, 6vw, 5rem);
+    font-size: clamp(2rem, 4.5vw, 3.25rem);
 }
 
 .hero-copy {
@@ -186,7 +186,7 @@ a {
 
 .page-title {
     max-width: 860px;
-    font-size: clamp(2.25rem, 5vw, 4.4rem);
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
 }
 
 .page-title::after {
@@ -446,7 +446,7 @@ footer {
 
 @media (max-width: 767px) {
     .hero {
-        padding: 64px 0 36px;
+        padding: 48px 0 28px;
     }
 
     .hero-panel {
